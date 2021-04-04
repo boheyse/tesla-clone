@@ -16,7 +16,21 @@ const HomepageItem = (props) => {
                 <Text style={styles.subtitle}>Starting at $69,420</Text>
             </View>
 
-            <OrderButtons type="primary"/>
+            <OrderButtons
+                type="primary"
+                content={"Custom Order"}
+                onPress={() => {
+                    console.warn("Custom Order was pressed");
+                }}
+            />
+
+            <OrderButtons
+                type="secondary"
+                content={"Existing Inventory"}
+                onPress={() => {
+                    console.warn("Existing Inventory was pressed");
+                }}
+            />
 
         </View>
     );
