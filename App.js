@@ -7,7 +7,11 @@ import OrderButtons from "./components/OrderButtons";
 export default function App() {
   return (
     <View style={styles.container}>
-      <HomepageItem/>
+      <HomepageItem
+          title={"Model S"}
+          subtitle={"Starting at $69,420"}
+          image={require('./assets/images/ModelS.jpeg')}
+      />
 
     </View>
   );
